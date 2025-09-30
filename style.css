@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+header nav a {
+  margin-left: 25px;
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #e63946;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #fbc02d;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.red {
+  background: #e63946;
+  color: white;
+}
+
+.btn.red:hover {
+  background: #ff4d5a;
+}
+
+.btn.dark {
+  background: #222;
+  color: #ddd;
+}
+
+.btn.dark:hover {
+  background: #333;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.card {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #fbc02d;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 14px;
+  background: #111;
+  margin-top: 40px;
+}
+/* ปุ่ม download ในหน้า KernelOS */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;       /* ให้ปุ่มตัดบรรทัดถ้าเกิน */
+  gap: 15px;             /* ระยะห่างระหว่างปุ่ม */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons .btn {
+  min-width: 180px;      /* กำหนดความกว้างขั้นต่ำของปุ่ม */
+  text-align: center;
+}
